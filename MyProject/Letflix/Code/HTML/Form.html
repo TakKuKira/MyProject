@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="../CSS/Form.css">
+    <script src="../JS/Form.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="HomePage.html" class="headerTopLeft">
+            <img src="../../Assets/Logo/LetflixRemoveBG.png">
+        </a>
+
+        <div class="dropdown">
+            <button class="dropButton">
+                <img src="../../Assets/menu.png">
+            </button>
+            <div class="dropdown-content">
+              <a href="HomePage.html">Home</a>
+              <a href="Drama.html">Dramas</a>
+              <a href="SubscriptionPage.html">Plan</a>
+              <a href="About.html">About</a>
+            </div>
+          </div>
+    </div>  
+
+    <!-- Form -->
+    <div class="forms">
+        <div class="formTitle">
+             Registration Form
+        </div>    
+
+        <form method="GET" action="./HomePage.html" id="myForm"> 
+            <div class="table">
+                <div class="tableRow">
+                    <div class="tableRowTitle">
+                        Email
+                    </div>
+                    
+                    <div class="tableRowInput">
+                        <input type="text" name="email">
+                    </div>
+                </div>
+                    
+                <div class="tableRow">
+                    <div class="tableRowTitle">
+                        Password
+                    </div>
+                    
+                    <div class="tableRowInput">
+                        <input type="password" name="password">
+                    </div>
+                </div>
+                    
+                <div class="tableRow">
+                    <div class="tableRowTitle">
+                        Confirm Password
+                    </div>
+                    
+                    <div class="tableRowInput">
+                        <input type="password" name="confPass"></input>
+                    </div>
+                </div>        
+                    
+                <div class="tableRow">
+                    <div class="tableRowTitle">
+                        Gender
+                    </div>
+                    
+                    <div class="tableRowInput">
+                        <input type="radio" name="gender" value="Male">Male</input>
+                        <input type="radio" name="gender" value ="Female">Female </input>
+                    </div>
+                </div>       
+                    
+                <div class="tableRow">
+                    <div class="tableRowTitle">
+                        Subscription Plan
+                    </div>
+                    
+                    <div class="tableRowInput">
+                        <select name="subsPlan" id="subsPlan">
+                            <option value="">Choose Subscription Plan</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                            <option value="diamond">Diamond</option>
+                        </select>
+                    </div>
+                </div>        
+
+                <div class="tableRow">
+                    <input type="checkbox" name='box'> Agree with terms and conditions </input>
+                </div>       
+                    
+                <div class="tableRow">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button> 
+                </div>                
+            </div>
+        </form>
+
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="copyright">
+            LeTflix_by_FarelJokoProductionHouse©
+        </div>
+        <div class="socMed">
+            <a href="https://www.youtube.com/user/NewOnNetflix">
+                <img src="../../Assets/youtube.png">
+            </a>
+            <a href="https://www.instagram.com/netflixid/?hl=en">
+                <img src="../../Assets/instagram.png">
+            </a>
+            <a href="https://twitter.com/netflix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <img src="../../Assets/twitter.png">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
